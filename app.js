@@ -22,7 +22,7 @@ app.use(errorHandlerMiddleware);
 //app.patch("/api/v1/tasks/:id", (req, rea) => {}); //update a task
 //app.delete("/api/v1/tasks/:id", (req, rea) => {}); //delete a task
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const start = async () => {
   try {
